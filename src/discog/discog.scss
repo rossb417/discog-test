@@ -1,0 +1,124 @@
+.discog-view {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .p-dataview {
+        .p-dataview-header{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    }
+    
+	.p-dropdown {
+		width: 14rem;
+		font-weight: normal;
+	}
+	.discog-name {
+        font-size: 1.5rem;
+        line-height: 1rem;
+        font-weight: 700;
+        min-height: 30px;
+        a {
+            text-decoration: none;
+            color: #666;
+        }
+	}
+	.discog-title {
+        margin: 0 0 .25rem 0;
+        font-weight: bold;
+        color: #333;
+    }
+    .discog-cat {
+        font-style: italic;
+        font-size: .75rem;
+    }
+	.discog-list-item {
+		display: flex;
+		align-items: center;
+		padding: 1rem;
+		width: 100%;
+		img {
+			width: 150px;
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+			margin-right: 2rem;
+		}
+		.discog-list-detail {
+			flex: 1 1 0;
+		}
+	
+		.discog-year {
+			font-size: 1.5rem;
+			font-weight: 600;
+			margin-bottom: .5rem;
+			align-self: flex-end;
+        }
+        
+		.discog-list-action {
+			display: flex;
+			flex-direction: column;
+		}
+
+	}
+	.discog-grid-item {
+		margin: .5em;
+		border: 1px solid #dee2e6;
+		padding: 0.25rem;
+		.discog-grid-item-top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.discog-grid-item-bottom {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		img {
+            width: 100%;
+            object-fit: cover;
+            max-height: 210px;
+			// box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+			margin: 0 0 1rem 0;
+		}
+		.discog-grid-item-content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+      
+		.discog-year {
+			font-size: 1rem;
+            font-weight: 600;
+            text-align: right;
+		}
+	}
+}
+@media screen and (max-width: 576px) {
+	.discog-view {
+        max-width: 1200px;
+        margin: 0 auto;
+		.discog-list-item {
+			flex-direction: column;
+			align-items: center;
+			img {
+				width: 75%;
+				margin: 2rem 0;
+			}
+			.discog-list-detail {
+				text-align: center;
+			}
+		
+			.discog-list-action {
+				display: flex;
+				flex-direction: column;
+				margin-top: 2rem;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+			}
+		}
+	}
+}
